@@ -11,15 +11,15 @@ const About = () => {
   return (
     <>
       <div
-        className="w-full bg-cover h-screen flex items-center justify-center"
+        className=" w-full bg-cover h-screen flex items-center justify-center"
         style={{ backgroundImage: "url('/Aboutpageimage.jpg')" }}
       >
         {/* White Container */}
         <div
           className="border-4 border-l border-lime-200 mt-10
             relative
-            w-[90%] h-[85%]
-            md:w-[80%] md:h-[75%]
+            w-[90%] h-[75%]
+            md:w-[80%] lg:h-[70%] xl:h-[73%] lg:top-5 
             bg-white  
             rounded-2xl md:rounded-3xl 
             overflow-hidden

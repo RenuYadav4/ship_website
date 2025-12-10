@@ -7,7 +7,7 @@ import TopBar from './Topbar'
 
 const Layout = () => {
   return (
-    <div className="md:p-3 relative w-full overflow-x-hidden">
+    <div className=" relative w-full overflow-x-hidden">
       {/* <TopBar/> */}
       <Navbar />
       <Outlet />

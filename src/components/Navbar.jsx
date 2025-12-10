@@ -87,7 +87,7 @@ const Navbar = () => {
       {/* MAIN NAVBAR */}
       <div
         className="
-          fixed top-10 z-40 left-1/2 -translate-x-1/2
+          fixed top-5 lg:top-15 z-40 left-1/2 -translate-x-1/2
           flex justify-between items-center
           w-[92%] md:w-[85%] lg:w-[78%]
           px-6 py-3 md:px-10 md:py-4

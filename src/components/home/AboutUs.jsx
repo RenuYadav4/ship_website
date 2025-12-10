@@ -9,7 +9,7 @@ const AboutUs = () => {
         <div className="relative w-full">
 
             {/* HEADING */}
-            <div className="w-full text-center -mt-5 md:-mt-9 lg:-mt-15 relative z-20 px-4">
+            <div className="w-full text-center -mt-5 md:-mt-9 lg:-mt-12 relative z-20 px-4">
                 <h1 className="text-[22px] md:text-5xl lg:text-7xl xl:text-8xl font-semibold 
                        text-orange-400 drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)] blur-[0.3px]">
                     About NavTex Marine Pvt Ltd

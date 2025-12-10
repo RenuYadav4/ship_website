@@ -57,7 +57,7 @@ const Commercial = () => {
       {/* ------------------------------------------------------------
           NEW CONTENT SECTION (transparent water-glass container)
       ------------------------------------------------------------- */}
-      <div className="w-full flex justify-center py-20 px-5">
+      <div className="w-full flex justify-center px-5">
         <div
           className="
             max-w-5xl w-full 

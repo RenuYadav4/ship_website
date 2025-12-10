@@ -57,7 +57,7 @@ const Technical = () => {
       {/* ------------------------------------------------------------
           NEW CONTENT SECTION (transparent water-glass container)
       ------------------------------------------------------------- */}
-      <div className="w-full flex justify-center py-20 px-5">
+      <div className="w-full flex justify-center md:px-5">
         <div
           className="
             max-w-5xl w-full 

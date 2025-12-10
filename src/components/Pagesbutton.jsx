@@ -44,7 +44,7 @@ const Pagesbutton = (props) => {
                 text-xs md:text-base
                 text-white md:font-medium
                 rounded-full
-                bg-gradient-to-r from-lime-500 to-lime-600
+                bg-linear-to-r from-lime-500 to-lime-600
                 shadow-sm
                 transition-all duration-300
                 cursor-default flex justify-center

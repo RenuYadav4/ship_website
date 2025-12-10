@@ -34,7 +34,7 @@ const Commercial = () => {
         </h1>
 
         {/* HERO CONTENT CENTERED LEFT */}
-        <div className="relative z-20 w-full flex flex-col gap-2 md:gap-4 px-5 md:px-10 bottom-15 md:bottom-20">
+        <div className="relative z-20 w-full flex flex-col gap-2 md:gap-4 px-5 md:px-10 bottom-15 md:bottom-20 lg:bottom-5 ">
           {/* MAIN HEADING */}
           <h1 className="text-white text-2xl md:text-5xl font-semibold ">
             Commercial Management
@@ -48,7 +48,7 @@ const Commercial = () => {
         </div>
 
         {/* BUTTON PLACED IN PERFECT POSITION */}
-        <div className="absolute left-40 bottom-40 md:left-140  lg:left-160 xl:left-280 xl:bottom-60 md:bottom-44 h-10 w-10">
+        <div className="absolute left-40  bottom-40 md:left-140   lg:left-200 xl:left-330 xl:bottom-60 md:bottom-44 h-10 w-10">
           <Pagesbutton first="Services" second="Commercial" />
         </div>
 

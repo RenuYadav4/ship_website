@@ -5,7 +5,7 @@ const Pagesbutton = (props) => {
     const { first, second } = props;
     return (
         <div
-            className="absolute bottom-6 left-1/2 -translate-x-1/2
+            className="absolute bottom-6 left-1/2  -translate-x-1/2
               flex items-center gap-2
               bg-white/10 backdrop-blur-xl
               shadow-lg

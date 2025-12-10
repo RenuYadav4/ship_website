@@ -8,8 +8,8 @@ import { IoMailUnreadOutline } from "react-icons/io5";
 
 import Dropdown from "./Dropdown";
 
-const services = ["Commercial Management", "Technical Management", "Crew Management","Consultancy Services"]
-const pages = ["Project ", "Project Details", "Faq","Request Qoute"];
+const services = ["Commercial Management", "Technical Management", "Crew Management", "Consultancy Services"]
+const pages = ["Project ", "Project Details", "Faq", "Request Qoute"];
 const news = ["Blog", "Blog Details"];
 
 const Navbar = () => {
@@ -121,7 +121,7 @@ const Navbar = () => {
 
           {/* ABOUT US */}
           <Link className="hover:text-orange-300 transition-all" to="about">About Us</Link>
-                    <Link className="hover:text-orange-300 transition-all" to="contact">Contact Us</Link>
+          <Link className="hover:text-orange-300 transition-all" to="contact">Contact Us</Link>
         </div>
 
         {/* LOGO */}
@@ -178,8 +178,30 @@ const Navbar = () => {
           >
             <HiX size={34} className="text-orange-300" />
           </button>
-          <Link className="hover:text-orange-300 transition" to="#" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          <Link className="hover:text-orange-300 transition" to="#" onClick={() => setIsMenuOpen(false)}>Services+</Link>
+          <Link className="hover:text-orange-300 transition" to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+
+          {/* SERVICES DROPDOWN FOR MOBILE */}
+          <div className="flex flex-col items-center">
+            <span className="hover:text-orange-300 transition cursor-pointer">
+              Services+
+            </span>
+
+            {/* NESTED ITEMS */}
+            <div className="flex flex-col mt-2 space-y-2 text-sm text-white/90">
+              {services.map((item) => (
+                <Link
+                  key={item}
+                  to={`/${item.toLowerCase().replace(/ /g, "-")}`}
+                  className="hover:text-orange-300 transition"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+
           <Link className="hover:text-orange-300 transition" to="#" onClick={() => setIsMenuOpen(false)}>Pages+</Link>
           <Link className="hover:text-orange-300 transition" to="#" onClick={() => setIsMenuOpen(false)}>News+</Link>
           <Link className="hover:text-orange-300 transition" to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>

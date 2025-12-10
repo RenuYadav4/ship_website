@@ -17,7 +17,7 @@ const HeroSection = () => {
       <div className="pt-[120px] text-center">
 
         {/* Bubble Title */}
-        <div className="lg:-mt-8 water-bubble md:p-10">
+        <div className="lg:-mt-4 water-bubble md:p-10">
           <h1
             className="
               text-white text-6xl md:text-[11rem] lg:text-[7rem] xl:text-[12rem] font-semibold

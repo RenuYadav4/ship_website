@@ -48,7 +48,7 @@ const Crew = () => {
         </div>
 
         {/* BUTTON PLACED IN PERFECT POSITION */}
-        <div className="absolute left-40 bottom-40 md:left-140  lg:left-200 xl:left-330 xl:bottom-60 md:bottom-44 h-10 w-10">
+        <div className="absolute left-40 md:left-140 lg:left-200 xl:left-300  bottom-60 md:bottom-70 xl:bottom-75  h-10 w-10">
           <Pagesbutton first="Services" second="Crew" />
         </div>
 
@@ -68,7 +68,7 @@ const Crew = () => {
             p-10 
             shadow-2xl 
             animate-float 
-            relative
+            relative bottom-35
           "
           style={{
             boxShadow:

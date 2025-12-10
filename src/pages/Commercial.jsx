@@ -6,7 +6,7 @@ const Commercial = () => {
     <div className="w-full min-h-screen bg-white">
 
       <div
-        className="relative w-full h-[80vh] overflow-hidden flex items-center"
+        className="relative w-full h-screen overflow-hidden flex items-center justify-center"
         style={{
           clipPath:
             "polygon(0 0, 100% 0, 100% 80%, 75% 70%, 50% 78%, 25% 65%, 0 75%)",
@@ -14,7 +14,7 @@ const Commercial = () => {
       >
         {/* BACKGROUND IMAGE */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center "
           style={{ backgroundImage: "url('/landing2.jpg')" }}
         />
 
@@ -34,7 +34,7 @@ const Commercial = () => {
         </h1>
 
         {/* HERO CONTENT CENTERED LEFT */}
-        <div className="relative z-20 w-full flex flex-col gap-2 md:gap-4 px-5 md:px-10 bottom-15 md:bottom-20 lg:bottom-5 ">
+        <div className="relative z-20 w-full flex flex-col gap-2 md:gap-4 px-5 md:px-10 bottom-25 md:bottom-20 lg:bottom-5 ">
           {/* MAIN HEADING */}
           <h1 className="text-white text-2xl md:text-5xl font-semibold ">
             Commercial Management
@@ -48,7 +48,7 @@ const Commercial = () => {
         </div>
 
         {/* BUTTON PLACED IN PERFECT POSITION */}
-        <div className="absolute left-40  bottom-40 md:left-140   lg:left-200 xl:left-330 xl:bottom-60 md:bottom-44 h-10 w-10">
+        <div className="absolute left-40 md:left-140 lg:left-200 xl:left-300  bottom-60 md:bottom-70 xl:bottom-75  h-10 w-10">
           <Pagesbutton first="Services" second="Commercial" />
         </div>
 
@@ -57,7 +57,7 @@ const Commercial = () => {
       {/* ------------------------------------------------------------
           NEW CONTENT SECTION (transparent water-glass container)
       ------------------------------------------------------------- */}
-      <div className="w-full flex justify-center px-5">
+      <div className=" w-full flex justify-center px-5">
         <div
           className="
             max-w-5xl w-full 
@@ -68,7 +68,7 @@ const Commercial = () => {
             p-10 
             shadow-2xl 
             animate-float 
-            relative
+            relative bottom-35
           "
           style={{
             boxShadow:

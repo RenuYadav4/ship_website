@@ -31,7 +31,7 @@ const Contact = () => {
             text-xs sm:text-sm 
             border border-black rounded-full 
             hover:bg-black hover:text-white 
-            transition z-[9999]
+            transition 
           "
         >
           CONTACT US
@@ -81,7 +81,7 @@ const Contact = () => {
         </motion.div>
 
         {/* TYPEWRITER HEADING */}
-        <div className="absolute top-[55vh] md:top-[65vh] sm:top-48 left-6 sm:left-12 z-[999]">
+        <div className="absolute top-[55vh] md:top-[65vh] sm:top-48 left-6 sm:left-12 ">
           <h1
             className="
               text-[36px] sm:text-[65px] md:text-[90px] xl:text-[110px] lg:mt-5
@@ -93,7 +93,7 @@ const Contact = () => {
         </div>
 
         {/* BOTTOM SECTION */}
-        <div className="relative z-[2] px-6 sm:px-12 pb-20 pt-10 w-full max-w-3xl mt-[50vh] sm:mt-[20vh] text-[#2f2f2f]">
+        <div className="relative z-2 px-6 sm:px-12 pb-20 pt-10 w-full max-w-3xl mt-[50vh] sm:mt-[20vh] text-[#2f2f2f]">
         </div>
       </div>
 

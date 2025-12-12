@@ -1,19 +1,26 @@
 import { Route, Routes } from 'react-router-dom'
+
 import './App.css'
 import Layout from './components/Layout'
-import Home from './pages/Home'
-import About from './pages/About'
-import Services from './pages/Services'
-import Contact from './pages/Contact'
-import Commercial from './pages/Commercial'
-import Technical from './pages/Technical'
-import Crew from './pages/Crew'
-import Consultancy from './pages/Consultancy'
+import { lazy, Suspense } from 'react';
+
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Commercial = lazy(() => import("./pages/Commercial"));
+const Technical = lazy(() => import("./pages/Technical"));
+const Crew = lazy(() => import("./pages/Crew"));
+const Consultancy = lazy(() => import("./pages/Consultancy"));
 
 function App() {
 
   return (
     <>
+    <Suspense fallback={
+        <div className="w-full h-screen flex items-center justify-center text-white text-xl">
+          Loading...
+        </div>
+      }>
       <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
@@ -25,6 +32,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Route>
       </Routes>
+      </Suspense>
     </>
   )
 }

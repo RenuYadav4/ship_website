@@ -16,11 +16,7 @@ function App() {
 
   return (
     <>
-    <Suspense fallback={
-        <div className="w-full h-screen flex items-center justify-center text-white text-xl">
-          Loading...
-        </div>
-      }>
+    
       <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
@@ -32,7 +28,6 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Route>
       </Routes>
-      </Suspense>
     </>
   )
 }

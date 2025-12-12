@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Navbar from './Navbar'
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
@@ -10,7 +10,10 @@ const Layout = () => {
     <div className=" relative w-full overflow-x-hidden">
       {/* <TopBar/> */}
       <Navbar />
-      <Outlet />
+      <Suspense fallback={<div>Loading...</div>}>
+            <Outlet />
+
+      </Suspense>
       <Banner/>
       <Footer />
     </div>

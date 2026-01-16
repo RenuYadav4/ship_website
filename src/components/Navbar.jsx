@@ -57,20 +57,20 @@ const Navbar = () => {
           </div>
           {/* icon */}
           <div>
-            <p>H.No. 8, NEERAV NIKUNJ PHASE 1, MAUJA KAKRETHA, AVAS VIKAS COLONY,</p>
-            <span> SADAR AGRA, U.P. - 282007</span>
+           <p>SF 2A, MOTI MANJIL RADHIKA VIHAR</p>
+              <span>MATHURA, U.P. - 281001</span>
           </div>
         </div>
 
         <div className='flex gap-5'>
           <div className='flex items-center font-semibold gap-2 text-sm'>
             <IoMailUnreadOutline />
-            <span>info@navtexmarine.com</span>
+            <span>gdshipmanagement2022@gmail.com</span>
           </div>
 
           <div className='flex items-center font-semibold gap-2 text-sm'>
             <IoMailUnreadOutline />
-            <span>crewing@navtexmarine.com</span>
+            <span>crewing@gdship.com</span>
           </div>
         </div>
 
@@ -136,7 +136,7 @@ const Navbar = () => {
         {/* CONTACT + ICONS */}
         <div className="hidden lg:flex items-center space-x-5">
           <span className="text-orange-400 font-semibold tracking-wide">
-            +91 8451967013
+            +91 9467842122
           </span>
 
           <button className="text-orange-400 hover:text-orange-300 transition">

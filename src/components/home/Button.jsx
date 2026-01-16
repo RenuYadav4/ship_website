@@ -1,13 +1,14 @@
 import React from "react";
 import { HiChevronDoubleRight } from "react-icons/hi";
 
-const Button = () => {
+const Button = ({ onAboutClick, onContactClick  }) => {
   return (
     <div className="flex justify-center mt-10">
       <div className="flex relative">
 
         {/* About Us (left) */}
         <button
+          onClick={onAboutClick}
           className="
             bg-white text-gray-700 
             px-5 py-2.5 md:px-7 md:py-4 lg:px-7 lg:py-3
@@ -25,6 +26,7 @@ const Button = () => {
 
         {/* Contact Us (right, slightly overlapping) */}
         <button
+        onClick={onContactClick}
           className="
             bg-blue-300 text-white 
             px-4 md:px-6 py-2.5 md:py-4 lg:px-5 lg:py-3

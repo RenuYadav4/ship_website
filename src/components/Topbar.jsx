@@ -51,21 +51,21 @@ const TopBar = () => {
           <div className="flex items-start md:items-center gap-2 leading-tight">
             <HiOutlineLocationMarker className="text-lg text-white/90" />
             <div>
-              <p>H.No. 8, NEERAV NIKUNJ PHASE 1, MAUJA KAKRETHA,</p>
-              <p>SADAR AGRA, U.P. - 282007</p>
+              <p>SF 2A, MOTI MANJIL RADHIKA VIHAR</p>
+              <p>MATHURA, U.P. - 281001</p>
             </div>
           </div>
 
           {/* Email 1 */}
           <div className="flex items-center gap-2">
             <HiOutlineMail className="text-lg text-white/90" />
-            <span>info@navtexmarine.com</span>
+            <span>gdshipmanagement2022@gmail.com</span>
           </div>
 
           {/* Email 2 */}
           <div className="flex items-center gap-2">
             <HiOutlineMail className="text-lg text-white/90" />
-            <span>crewing@navtexmarine.com</span>
+            <span>crewing@gdship.com</span>
           </div>
         </div>
 

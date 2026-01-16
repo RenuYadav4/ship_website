@@ -1,12 +1,12 @@
-import React from 'react';
+import React,{forwardRef} from 'react';
 import { HiChevronDoubleRight } from 'react-icons/hi';
 
-const AboutUs = () => {
+const AboutUs = forwardRef((props, ref) => {
     const rows = 5; // number of rows
     const cols = 5; // number of columns
 
     return (
-        <div className="relative w-full">
+        <div ref={ref} className="relative w-full">
 
             {/* HEADING */}
             <div className="w-full text-center -mt-5 md:-mt-9 lg:-mt-12 relative z-20 px-4">
@@ -86,6 +86,6 @@ const AboutUs = () => {
 
         </div>
     );
-};
+});
 
 export default AboutUs;

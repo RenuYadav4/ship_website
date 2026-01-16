@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import React from "react";
 import { HiPhone, HiMail, HiLocationMarker } from "react-icons/hi";
 
-const ContactComponent = () => {
+const ContactComponent = forwardRef((props,ref) => {
   return (
-    <div className="w-full min-h-screen px-6 py-16">
+    <div ref={ref} className="w-full min-h-screen px-6 py-16">
 
       {/* BIG FULL-WIDTH HEADING */}
       <h1 className="text-[55px] md:text-[140px] xl:text-[250px]  tracking-widest text-center text-[#0B1E3F] opacity-20 select-none">
@@ -120,6 +121,6 @@ const ContactComponent = () => {
       </div>
     </div>
   );
-};
+});
 
 export default ContactComponent;

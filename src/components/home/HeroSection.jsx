@@ -1,7 +1,7 @@
 import { HiChevronDoubleRight } from "react-icons/hi";
 import Button from "./Button";
 
-const HeroSection = () => {
+const HeroSection = ({scrollToAbout,scrollToContact}) => {
   return (
     <div
       className="w-full -mt-5 bg-cover bg-center bg-no-repeat"
@@ -25,7 +25,7 @@ const HeroSection = () => {
             "
             style={{ animationDelay: "0ms" }}
           >
-            NAVTEX
+            GDSHIP
           </h1>
         </div>
 
@@ -54,7 +54,8 @@ const HeroSection = () => {
         </div>
 
         {/* Button */}
-        <Button/>
+        <Button onAboutClick={scrollToAbout}
+  onContactClick={scrollToContact}/>
 
         {/* ------- rest of your content stays EXACTLY same -------- */}
 

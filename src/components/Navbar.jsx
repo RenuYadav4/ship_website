@@ -17,7 +17,7 @@ const Navbar = () => {
   const [showSearchBar, setShowSearchBar] = useState(false);
   const [showTopbar, setShowTopbar] = useState(true);
 
-  // 🔥 Hide topbar on scroll down, show on scroll up
+  //  Hide topbar on scroll down, show on scroll up
   useEffect(() => {
     let lastScroll = 0;
 
@@ -86,22 +86,25 @@ const Navbar = () => {
 
       {/* MAIN NAVBAR */}
       <div
-        className="
-          fixed top-5 lg:top-15 z-40 left-1/2 -translate-x-1/2
-          flex justify-between items-center
-          w-[92%] md:w-[85%] lg:w-[78%]
-          px-6 py-3 md:px-10 md:py-4
-          text-white
-          rounded-full
-          bg-white/10 backdrop-blur-2xl
-          border border-white/30
-          shadow-[0_8px_35px_rgba(0,0,0,0.2)]
-          ring-1 ring-white/20
-        "
-        style={{
-          boxShadow: "0 15px 25px rgba(255,165,0,0.25)"
-        }}
-      >
+  className={`
+    fixed z-40 left-1/2 -translate-x-1/2
+    flex justify-between items-center
+    w-[92%] md:w-[85%] lg:w-[78%]
+    px-6 py-3 md:px-10 md:py-4
+    text-white
+    rounded-full
+    bg-white/10 backdrop-blur-2xl
+    border border-white/30
+    shadow-[0_8px_35px_rgba(0,0,0,0.2)]
+    ring-1 ring-white/20
+    transition-all duration-500 ease-in-out
+    ${showTopbar ? "top-5 lg:top-16" : "top-2"}
+  `}
+  style={{
+    boxShadow: "0 15px 25px rgba(255,165,0,0.25)"
+  }}
+>
+
         {/* LEFT MENU */}
         <div className="hidden lg:flex space-x-6 font-medium text-white/90 relative">
 

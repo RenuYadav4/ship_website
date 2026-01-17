@@ -2,9 +2,9 @@ import React from "react";
 
 const Banner = () => {
     return (
-        <div>
+        <div className="relative bottom-20">
 
-            <h1 className="mt-5 text-[#BB431D] text-center text-xl md:text-5xl lg:text-6xl xl:text-8xl font-semibold">
+            <h1 className="mt-15  text-[#BB431D] text-center text-xl md:text-5xl lg:text-6xl xl:text-8xl font-semibold">
                 GET IN TOUCH WITH US ANYTIME
             </h1>
 

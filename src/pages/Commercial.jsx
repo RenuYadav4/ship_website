@@ -64,18 +64,19 @@ const Commercial = () => {
             bg-white/10 
             backdrop-blur-xl 
             rounded-3xl 
-            border border-white/30 
-            p-10 
+            border border-white/30
+            p-5 
+            lg:p-10 
             shadow-2xl 
             animate-float 
-            relative bottom-35
+            relative bottom-30
           "
           style={{
             boxShadow:
               "0 0 25px rgba(255,255,255,0.4), inset 0 0 25px rgba(255,255,255,0.3)",
           }}
         >
-          
+
 
           <h2 className="text-3xl md:text-5xl xl:text-6xl font-semibold text-gray-700 mb-4">
             Our Commercial Expertise
@@ -83,9 +84,10 @@ const Commercial = () => {
 
           <div className="flex flex-col gap-10">
             <p className="text-gray-700 md:text-lg leading-relaxed">
-              Navtex Marine Services provides commercial management solutions for a wide array of vessels, with services including full chartering and marine accounting. Our commercial operations are backed by an integrated management platform that facilitates efficient planning, monitoring and performance analysis – Anywhere and anytime.</p>
-            <p> We offer a full commercial management package from the fixture of vessels to post-fixture operations, assistance with crew management and sales & purchases. We have extensive experience in managing various vessel types including all tanker segments. Our operation teams are headed by ex-marine Masters with proven experience in the shipping industry. Our commercial management team is highly trained and skilled to manage risks and provides round the clock coverage to ensure optimal results.</p>
-          </div>
+              GD Ship Services provides commercial management solutions for a wide range of vessels, including full chartering and marine accounting. </p>
+            <p>
+              We offer end-to-end commercial management, from vessel fixture to post-fixture operations, along with support in crew management and sales & purchases.
+            </p>          </div>
 
 
         </div>

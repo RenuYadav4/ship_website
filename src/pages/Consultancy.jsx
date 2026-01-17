@@ -48,7 +48,7 @@ const Consultancy = () => {
         </div>
 
         {/* BUTTON PLACED IN PERFECT POSITION */}
-       <div className="absolute left-40 md:left-140 lg:left-200 xl:left-300  bottom-60 md:bottom-70 xl:bottom-75  h-10 w-10">
+       <div className="absolute left-40 md:left-140 lg:left-200 xl:left-300  bottom-45 md:bottom-60 xl:bottom-75  h-10 w-10">
           <Pagesbutton first="Services" second="Consultancy" />
         </div>
 
@@ -65,10 +65,10 @@ const Consultancy = () => {
             backdrop-blur-xl 
             rounded-3xl 
             border border-white/30 
-            p-10 
+            p-5 lg:p-10 
             shadow-2xl 
             animate-float 
-            relative bottom-35
+            relative bottom-25 
           "
           style={{
             boxShadow:
@@ -83,8 +83,8 @@ const Consultancy = () => {
 
           <div className="flex flex-col gap-10">
             <p className="text-gray-700 md:text-lg leading-relaxed">
-              Navtex Marine Services provides crew management services to help our clients be more efficient and effective in their operations. We have the relevant resources, systems and experience to provide solutions to the highest standards. Broadly, our crew management services include recruitment, management, training and development, payroll and travel logistics. These crew management solutions are highly technology based, which are a class apart when it comes to comparing with the competition. We mainly source our crew from India but are open to hire from any part of the world as per the requirement of the customer.</p>
-            <p>Our core focus is to have well trained and authentic staff that can actually take care of the vessel apart from performing necessary duties. Navtex Marine Services has plans to start training Centres in India so as to substantiate this claim. A stringent selection procedure, better contracts for crew and in house promotions ensure that there is incessant supply of good quality sea-farers. Crew management is at the core of our business, and we take great pride in providing high levels of competence in our crewing services.</p>
+              Gd Services provides crew management services to help our clients be more efficient and effective in their operations. We have the relevant resources, systems and experience to provide solutions to the highest standards.</p>
+            <p>Our core focus is to have well trained and authentic staff that can actually take care of the vessel apart from performing necessary duties. Navtex Marine Services has plans to start training Centres in India so as to substantiate this claim.</p>
           </div>
 
         </div>

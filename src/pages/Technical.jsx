@@ -48,7 +48,7 @@ const Technical = () => {
         </div>
 
         {/* BUTTON PLACED IN PERFECT POSITION */}
-       <div className="absolute left-40 md:left-140 lg:left-200 xl:left-300  bottom-60 md:bottom-70 xl:bottom-75  h-10 w-10">
+        <div className="absolute left-40 md:left-140 lg:left-200 xl:left-300  bottom-45 md:bottom-60 xl:bottom-75  h-10 w-10">
           <Pagesbutton first="Services" second="Technical" />
         </div>
 
@@ -65,17 +65,17 @@ const Technical = () => {
             backdrop-blur-xl 
             rounded-3xl 
             border border-white/30 
-            p-10 
+            p-8 lg:p-10 
             shadow-2xl 
             animate-float 
-            relative bottom-35
+            relative bottom-25 
           "
           style={{
             boxShadow:
               "0 0 25px rgba(255,255,255,0.4), inset 0 0 25px rgba(255,255,255,0.3)",
           }}
         >
-          
+
 
           <h2 className="text-3xl md:text-5xl xl:text-6xl font-semibold text-gray-700 mb-4">
             Our Technical Expertise
@@ -83,8 +83,8 @@ const Technical = () => {
 
           <div className="flex flex-col gap-10">
             <p className="text-gray-700 md:text-lg leading-relaxed">
-Our Technical Management include maintenance and repair, inspection, testing and calibration, as well as consultancy services. With years of experience in the maritime industry, we have developed a deep understanding of the technical challenges faced by vessel operators and owners. We have a team of highly skilled and experienced engineers and technicians who are available to provide support for vessels of all types and sizes.</p>
-            <p> Technical Management ensures that all vessels are well maintained and operate at peak performance at all times. All maintenance on the machinery is logged down electronically which assists in a planned way to carry out the maintenance. This ensures proper utilization of spares and avoids unnecessary pile up spares on board. Superintendents take a holistic approach and keep a keen eye on all the machinery parameters so as to identify early signs of breakdown and guide the ships staff accordingly.</p>
+              Our Technical Management include maintenance and repair, inspection, testing and calibration, as well as consultancy services. With years of experience in the maritime industry, we have developed a deep understanding of the technical challenges .</p>
+            <p> Technical Management ensures that all vessels are well maintained and operate at peak performance at all times. All maintenance on the machinery is logged down electronically which assists in a planned way to carry out the maintenance.  </p>
           </div>
 
 

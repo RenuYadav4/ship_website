@@ -28,7 +28,7 @@ const ContactComponent = forwardRef((props,ref) => {
               <HiPhone className="text-[#0B1E3F] text-3xl" />
               <div>
                 <h3 className="font-semibold text-lg text-[#0B1E3F]">Phone</h3>
-                <p className="text-gray-600">+91 98765 43210</p>
+                <p className="text-gray-600">+91 9467842122</p>
               </div>
             </div>
 
@@ -36,7 +36,7 @@ const ContactComponent = forwardRef((props,ref) => {
               <HiMail className="text-[#0B1E3F] text-3xl" />
               <div>
                 <h3 className="font-semibold text-lg text-[#0B1E3F]">Email</h3>
-                <p className="text-gray-600">support@shipservices.com</p>
+                <p className="text-gray-600">support@gdshipservices.com</p>
               </div>
             </div>
 
@@ -44,7 +44,7 @@ const ContactComponent = forwardRef((props,ref) => {
               <HiLocationMarker className="text-[#0B1E3F] text-3xl" />
               <div>
                 <h3 className="font-semibold text-lg text-[#0B1E3F]">Location</h3>
-                <p className="text-gray-600">Marine Dockyard, Mumbai, India</p>
+                <p className="text-gray-600">Gd Ship, Mathura, India</p>
               </div>
             </div>
           </div>

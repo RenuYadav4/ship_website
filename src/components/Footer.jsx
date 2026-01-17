@@ -12,7 +12,7 @@ const Footer = () => {
         {/* About Section */}
         <div>
           <h2 className="text-lg font-semibold text-white mb-4">
-            About Navtex Marine Services Pvt Ltd.
+            About GD Ship Management Pvt Ltd.
           </h2>
           <p className="text-sm leading-relaxed text-gray-400">
             We are headed by a team of senior shipping professionals with vast
@@ -66,25 +66,25 @@ const Footer = () => {
           <div className="flex items-start gap-3 text-sm text-gray-400 mb-4">
             <FiMapPin className="text-white mt-1" />
             <p>
-              Navtex Marine, H.No. 8, NEERAV NIKUNJ PHASE 1,
-              MAUJA KAKRETHA, AVAS VIKAS COLONY,  
-              SADAR AGRA, U.P. - 282007
+             GDSHIP Management Private Limited,
+             SF 2A, MOTI MANJIL RADHIKA VIHAR MATHURA UTTAR PRADESH 
+             281001
             </p>
           </div>
 
           <div className="flex items-center gap-3 text-sm text-gray-400 mb-4">
             <FiPhone className="text-white" />
-            <p>8451967013</p>
+            <p>9467842122</p>
           </div>
 
           <div className="flex items-center gap-3 text-sm text-gray-400 mb-2">
             <FiMail className="text-white" />
-            <p>info@navtexmarine.com</p>
+            <p>gdshipmanagement2022@gmail.com</p>
           </div>
 
           <div className="flex items-center gap-3 text-sm text-gray-400">
             <FiMail className="text-white" />
-            <p>crewing@navtexmarine.com</p>
+            <p>crewing@gdship.com</p>
           </div>
         </div>
 
@@ -94,7 +94,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-center justify-between mt-6 text-gray-500 text-sm">
 
         <p>
-          2025 © All Rights Reserved, Navtex Marine Services Pvt Ltd
+          2025 © All Rights Reserved, GD Ship Pvt Ltd
         </p>
 
         <div className="flex gap-8 mt-4 md:mt-0">

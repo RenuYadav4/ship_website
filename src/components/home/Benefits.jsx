@@ -2,7 +2,7 @@ import React from "react";
 
 const Benefits = () => {
   return (
-    <div className="w-full py-20">
+    <div className="w-full py-45 md:py-20">
 
       {/* SECTION HEADING */}
       <div className="text-center mb-10">
@@ -40,7 +40,7 @@ const Benefits = () => {
             <h2 className="text-3xl md:text-4xl font-semibold mb-3">
               What You Get With Our Best Services
             </h2>
-            <p className="text-blue-300 font-bold mb-6  md:text-2xl lg:text-4xl max-w-xl">
+            <p className="text-[#3E642B] font-bold mb-6  md:text-2xl lg:text-4xl max-w-xl">
               You will get the following with our best services.
             </p>
 

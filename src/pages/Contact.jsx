@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import ContactComponent from "../components/ContactComponent";
 
@@ -16,12 +16,18 @@ const Contact = () => {
     }, 80);
   }, []);
 
+const contactRef = useRef(null);
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <div className="w-full min-h-screen bg-[#d6ceb7] overflow-hidden relative">
+      <div className="w-full min-h-screen bg-[#1A334E] overflow-hidden relative">
 
         {/* CONTACT BUTTON (MOVED LOWER) */}
         <button
+        onClick={scrollToContact}
           className="
             absolute 
             top-[65vh] 
@@ -31,7 +37,7 @@ const Contact = () => {
             text-xs sm:text-sm 
             border border-black rounded-full 
             hover:bg-black hover:text-white 
-            transition 
+            transition cursor-pointer
           "
         >
           CONTACT US
@@ -97,7 +103,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <ContactComponent />
+      <ContactComponent ref={contactRef}/>
     </>
   );
 };

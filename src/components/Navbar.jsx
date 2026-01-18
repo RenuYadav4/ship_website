@@ -57,8 +57,8 @@ const Navbar = () => {
           </div>
           {/* icon */}
           <div>
-           <p>SF 2A, MOTI MANJIL RADHIKA VIHAR</p>
-              <span>MATHURA, U.P. - 281001</span>
+            <p>SF 2A, MOTI MANJIL RADHIKA VIHAR</p>
+            <span>MATHURA, U.P. - 281001</span>
           </div>
         </div>
 
@@ -77,77 +77,76 @@ const Navbar = () => {
         {/* SOCIAL MEDIA ICONS */}
         <div
           className="flex items-center space-x-3 text-white/80 text-lg">
-          <FaFacebook className="hover:text-orange-300 cursor-pointer" />
-          <FaInstagram className="hover:text-orange-300 cursor-pointer" />
-          <FaLinkedin className="hover:text-orange-300 cursor-pointer" />
-          <FaTwitter className="hover:text-orange-300 cursor-pointer" />
+          <FaFacebook className="hover:text-[#1A334E] cursor-pointer" />
+          <FaInstagram className="hover:text-[#1A334E] cursor-pointer" />
+          <FaLinkedin className="hover:text-[#1A334E] cursor-pointer" />
+          <FaTwitter className="hover:text-[#1A334E] cursor-pointer" />
         </div>
       </div>
 
       {/* MAIN NAVBAR */}
       <div
-  className={`
-    fixed z-40 left-1/2 -translate-x-1/2
-    flex justify-between items-center
-    w-[92%] md:w-[85%] lg:w-[78%]
-    px-6 py-3 md:px-10 md:py-4
-    text-white
+        className={`
+   fixed z-40 left-1/2 -translate-x-1/2
+    flex justify-between items-center max-h-18 md:max-h-15 xl:max-h-18
+    w-[92%] md:w-[85%] lg:w-[78%] lg:px-5
+    text-[#1A334E] font-semibold
     rounded-full
     bg-white/10 backdrop-blur-2xl
     border border-white/30
-    shadow-[0_8px_35px_rgba(0,0,0,0.2)]
     ring-1 ring-white/20
     transition-all duration-500 ease-in-out
     ${showTopbar ? "top-5 lg:top-16" : "top-2"}
   `}
-  style={{
-    boxShadow: "0 15px 25px rgba(255,165,0,0.25)"
-  }}
->
+        style={{
+          boxShadow: "0 15px 25px rgba(255,165,0,0.25)"
+        }}
+      >
 
         {/* LEFT MENU */}
-        <div className="hidden lg:flex space-x-6 font-medium text-white/90 relative">
+        <div className="hidden lg:flex space-x-6 font-semibold text-[#8bbb74] relative">
 
           {/* HOME */}
-          <Link className="hover:text-orange-300 transition-all" to="/">Home</Link>
+          <Link className="hover:text-[#6b7c62] transition-all" to="/">Home</Link>
 
           {/* SERVICES DROPDOWN */}
-          <div className="group relative">
-            <span className="cursor-pointer hover:text-orange-300 transition-all">
+          <div className="relative group">
+            {/* Hover trigger */}
+            <span className="inline-block cursor-pointer hover:text-[#6b7c62] transition-all">
               Services+
             </span>
 
-            <div className="opacity-0 group-hover:opacity-100 transition-all">
+            {/* Dropdown */}
+            <div className="absolute left-0 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <Dropdown items={services} />
             </div>
           </div>
-
           {/* ABOUT US */}
-          <Link className="hover:text-orange-300 transition-all" to="about">About Us</Link>
-          <Link className="hover:text-orange-300 transition-all" to="contact">Contact Us</Link>
+          <Link className="hover:text-[#6b7c62] transition-all" to="about">About Us</Link>
+          <Link className="hover:text-[#6b7c62] transition-all" to="contact">Contact Us</Link>
         </div>
 
         {/* LOGO */}
-        <div className="w-16 md:w-20">
+        <div className="flex items-center h-full">
           <img
-            src="/Navtex-logo.png"
+            src="/gdship.jpeg"
             alt="logo"
-            className="drop-shadow-[0_0_10px_rgba(255,136,0,0.4)]"
+            className="h-20 md:h-24 xl:h-28 w-auto drop-shadow-[0_0_10px_rgba(255,136,0,0.4)]"
           />
         </div>
 
         {/* CONTACT + ICONS */}
         <div className="hidden lg:flex items-center space-x-5">
-          <span className="text-orange-400 font-semibold tracking-wide">
+          <span className="text-[#8bbb74] font-semibold tracking-wide">
             +91 9467842122
           </span>
 
-          <button className="text-orange-400 hover:text-orange-300 transition">
+          <button className="text-[#8bbb74]  transition">
             <HiPhone size={22} />
           </button>
 
           <button
-            className="text-white cursor-pointer hover:text-orange-300 transition"
+            className="text-[#8bbb74] cursor-pointer transition"
             onClick={() => setShowSearchBar(true)}
           >
             <HiSearch size={22} />
@@ -157,14 +156,14 @@ const Navbar = () => {
         {/* MOBILE MENU ICON */}
         <div className="lg:hidden">
           <button onClick={() => setIsMenuOpen(true)}>
-            <HiMenu size={28} className="text-white cursor-pointer drop-shadow-lg" />
+            <HiMenu size={23} className="text-[#3E642B] hover:text-[#6c716a]  cursor-pointer drop-shadow-lg" />
           </button>
 
           <button
-            className="text-white cursor-pointer ml-2 hover:text-orange-300 transition"
+            className="text-[#3E642B] cursor-pointer ml-2 md:ml-2 mr-3 hover:text-[#6c716a] transition"
             onClick={() => setShowSearchBar(true)}
           >
-            <HiSearch size={25} />
+            <HiSearch size={23} />
           </button>
         </div>
       </div>
@@ -179,13 +178,13 @@ const Navbar = () => {
             className="absolute top-6 cursor-pointer right-6"
             onClick={() => setIsMenuOpen(false)}
           >
-            <HiX size={34} className="text-orange-300" />
+            <HiX size={34} className="text-white" />
           </button>
-          <Link className="hover:text-orange-300 transition" to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+          <Link className="hover:text-[#79936d]  transition" to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
 
           {/* SERVICES DROPDOWN FOR MOBILE */}
           <div className="flex flex-col items-center">
-            <span className="hover:text-orange-300 transition cursor-pointer">
+            <span className="hover:text-[#79936d]  transition cursor-pointer">
               Services+
             </span>
 
@@ -195,7 +194,7 @@ const Navbar = () => {
                 <Link
                   key={item}
                   to={`/${item.toLowerCase().replace(/ /g, "-")}`}
-                  className="hover:text-orange-300 transition"
+                  className="hover:text-[#79936d] transition"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
@@ -205,10 +204,10 @@ const Navbar = () => {
           </div>
 
 
-          <Link className="hover:text-orange-300 transition" to="#" onClick={() => setIsMenuOpen(false)}>Pages+</Link>
-          <Link className="hover:text-orange-300 transition" to="#" onClick={() => setIsMenuOpen(false)}>News+</Link>
-          <Link className="hover:text-orange-300 transition" to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
-          <span className="text-orange-500 font-semibold mt-4">+91 8451967013</span>
+          <Link className="hover:text-[#79936d]  transition" to="#" onClick={() => setIsMenuOpen(false)}>Pages+</Link>
+          <Link className="hover:text-[#79936d]  transition" to="#" onClick={() => setIsMenuOpen(false)}>News+</Link>
+          <Link className="hover:text-[#79936d] transition" to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+          <span className="hover:text-[#79936d] text-[#3E642B] font-semibold mt-4">+91 8451967013</span>
         </div>
       )}
     </>

@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './components/Layout'
 import { lazy, Suspense } from 'react';
+import ScrollToTop from './components/ScrollToTop';
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <>
-    
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />

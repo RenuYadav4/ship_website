@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+    const navigate = useNavigate();
     return (
         <div className="relative bottom-20">
 
-            <h1 className="mt-15  text-[#BB431D] text-center text-xl md:text-5xl lg:text-6xl xl:text-8xl font-semibold">
+            <h1 className="mt-15  text-[#1A334E] text-center text-xl md:text-5xl lg:text-6xl xl:text-8xl font-semibold">
                 GET IN TOUCH WITH US ANYTIME
             </h1>
 
@@ -25,7 +27,7 @@ const Banner = () => {
                         "linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)",
                 }}
             >
-                <h2 className="text-lime-400 md:text-3xl font-semibold lg:p-10">
+                <h2 className="text-[#1c4905] md:text-3xl font-semibold lg:p-10">
                     Marine Services Are Often Considered
                 </h2>
 
@@ -38,9 +40,10 @@ const Banner = () => {
                 </p>
 
                 <div className="mt-20 cursor-pointer w-45 h-12 xl:w-50 xl:h-16 relative left-7 bottom-10 md:left-60 lg:left-85 xl:left-180 flex items-center justify-center z-20">
-                    <div className="absolute left-0 w-1/2 h-full border-5 border-t border-b border-[#BB431D]" />
-                    <div className="absolute right-0 w-1/2 h-full bg-[#BB431D] backdrop-blur-md" />
+                    <div className="absolute left-0 w-1/2 h-full border-5 border-t border-b border-[#1c4905]" />
+                    <div className="absolute right-0 w-1/2 h-full bg-[#1c4905] backdrop-blur-md" />
                     <button
+                    onClick={()=>navigate("/contact")}
                         className="cursor-pointer
       absolute font-semibold text-white 
       tracking-[0.25em] text-lg xl:text-xl

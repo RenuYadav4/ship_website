@@ -11,7 +11,7 @@ const Dropdown = ({ items }) => {
           <Link
             key={index}
             to={path}
-            className="block px-4 py-2 hover:bg-orange-100 transition"
+            className="block px-4 py-2 hover:bg-[#1236036f] transition"
           >
             {item}
           </Link>

@@ -19,10 +19,10 @@ const Service = () => {
         viewport={{ once: false, amount: 0.3 }}
         className="
           w-[90%] sm:w-[85%] md:w-[65%] xl:w-[55%]
-          h-32 sm:h-40 md:h-52 xl:h-72
+          h-32 sm:h-40 md:h-38 xl:h-55
           border-t border-l border-b border-gray-300/40
           rounded-l-xl backdrop-blur-sm
-          -mt-8 sm:-mt-10 md:-mt-14 xl:-mt-16
+          -mt-8 sm:-mt-10 md:-mt-20 xl:-mt-15
           shadow-[-35px_15px_50px_rgba(0,0,0,0.45)]
         "
       ></motion.div>
@@ -39,13 +39,13 @@ const Service = () => {
           Our Services
         </h1>
 
-        <h2 className="text-lg sm:text-xl md:text-3xl font-semibold text-gray-700">
+        <h2 className="text-md sm:text-xl md:text-3xl font-semibold text-gray-700">
           Provides A Reliable Services
         </h2>
       </div>
 
       {/* UI dashes */}
-      <div className="fle grid grid-cols-2 md:grid-cols-4 gap-4 p-4 max-w-[1200px] mx-auto">
+      <div className="hidden  md:grid grid-cols-2 md:grid-cols-4 gap-4 p-4 max-w-[1200px] mx-auto">
         <div className="h-40 shadow-md border border-gray-700 rounded-2xl"></div>
         <div className="h-[260px] shadow-md border border-gray-700 rounded-2xl"></div>
         <div className="h-[120px] shadow-md border border-gray-700 rounded-2xl"></div>
@@ -59,9 +59,8 @@ const Service = () => {
 
           {/* ------- SERVICE CARD 1 (LEFT TOP) ------- */}
           <div
-            
             className="
-              absolute top-0 left-0 
+              absolute top-10 md:top-0 left-0 
               w-[80%] md:w-[55%] 
               h-auto
               bg-gray-200 
@@ -91,7 +90,7 @@ const Service = () => {
             {...cardAnimation}
             viewport={{ amount: 0.2 }}
             className="
-              absolute bottom-0 right-0 
+              absolute -bottom-28 md:bottom-0  right-0 
               w-[85%] md:w-[60%] 
               h-auto  
               bg-[#BB431D]
@@ -127,7 +126,7 @@ const Service = () => {
             {...cardAnimation}
             viewport={{ amount: 0.2 }}
             className="
-              absolute top-0 right-0 
+              absolute top-28  md:top-0 right-0 
               w-[78%] md:w-[55%] 
               h-auto 
               bg-[#9AE600] 
@@ -157,7 +156,7 @@ const Service = () => {
             {...cardAnimation}
             viewport={{ amount: 0.2 }}
             className="
-              absolute bottom-0 left-0 
+              absolute -bottom-40 md:bottom-0 left-0 
               w-[85%] md:w-[60%] 
               h-auto 
               bg-[#46EDD5] 

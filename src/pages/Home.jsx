@@ -13,19 +13,19 @@ const Home = () => {
   const scrollToAbout = () => {
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
   };
-   const scrollToContact = () => {
+  const scrollToContact = () => {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className='w-full'>
       <Suspense fallback={<div>Loading...</div>}>
-        <HeroSection  scrollToAbout={scrollToAbout} scrollToContact={scrollToContact}/>
+        <HeroSection scrollToAbout={scrollToAbout} scrollToContact={scrollToContact} />
       </Suspense>      <Suspense fallback={<div>Loading...</div>}>
         <AboutUs ref={aboutRef} />
       </Suspense>
       <div className='p-3 text-sm md:p-10 md:text-xl xl:text-2xl xl:p-26  space-x-2 text-center' >
-        <p className='text-cyan-800 [text-shadow:0_4px_8px_rgba(14_165_223/0.5)]  font-serif'> <span className='text-lime-400 text-[16px] md:text-4xl xl:text-5xl font-semibold'>A genuine  Strategic Partner is Navtex Marine Services Pvt Ltd Itd.</span> You can get the full range of end-to-end solutions you need to run your business effectively and efficiently through our global network. Investigate our administration proposing to find more.</p>
+        <p className='text-[#1A334E] [text-shadow:0_4px_8px_rgba(14_165_223/0.5)]  font-serif'> <span className='text-[#1A334E] text-[16px] md:text-4xl xl:text-5xl font-semibold'>A genuine  Strategic Partner is Navtex Marine Services Pvt Ltd Itd.</span> You can get the full range of end-to-end solutions you need to run your business effectively and efficiently through our global network. Investigate our administration proposing to find more.</p>
       </div>
       <div
         style={{
@@ -42,7 +42,7 @@ const Home = () => {
 
 
       </div>
-      <ContactComponent ref={contactRef}/>
+      <ContactComponent ref={contactRef} />
     </div>
   )
 }

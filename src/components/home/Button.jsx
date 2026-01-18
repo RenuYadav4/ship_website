@@ -28,7 +28,7 @@ const Button = ({ onAboutClick, onContactClick  }) => {
         <button
         onClick={onContactClick}
           className="
-            bg-blue-300 text-white 
+            bg-[#1A334E] text-white 
             px-4 md:px-6 py-2.5 md:py-4 lg:px-5 lg:py-3
             xl:py-4
             text-md  lg:text-[18px]

@@ -12,7 +12,7 @@ const Searchbar = ({ showSearchBar, setShowSearchBar }) => {
                 animate={{ y: 0 }}
                 exit={{ y: "-100%" }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="w-full absolute top-0 left-0 z-50 bg-[#DC4F24] bg-opacity-95 
+                className="w-full absolute top-0 left-0 z-50 bg-[#1A334E] bg-opacity-95 
                        border-b-4 border-white shadow-lg animate-slideDown"
             >
                 {/* Close Button Row */}
@@ -41,7 +41,7 @@ const Searchbar = ({ showSearchBar, setShowSearchBar }) => {
                         {/* Search Input */}
                         <div className="flex items-center bg-white rounded-full overflow-hidden shadow-lg 
                                     w-full max-w-xl mx-auto px-3 py-2">
-                            <FiSearch className="text-[#DC4F24] text-2xl ml-2" />
+                            <FiSearch className="text-[#1A334E] text-2xl ml-2" />
 
                             <input
                                 type="text"

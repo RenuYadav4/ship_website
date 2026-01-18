@@ -54,13 +54,13 @@ const StatCard = ({ icon, percentage, type, startAnimation }) => {
     <motion.div
       animate={controls}
       initial={{ opacity: 0, y: 40, scale: 0.95 }}
-      className="relative bg-linear-to-br from-gray-900/60 to-gray-900/20 
+      className="relative bg-linear-to-br from-gray-900/60 to-gray-700/20 
                  backdrop-blur-xl border border-white/10
                  rounded-3xl p-6 shadow-2xl w-full h-[260px]
                  flex flex-col justify-between z-20"
     >
       <div className="text-gray-300 mb-2">{icon}</div>
-      <h2 className="text-teal-300 text-4xl font-bold tracking-tight">
+      <h2 className="text-[#96b188] text-4xl font-bold tracking-tight">
         +{value}%
       </h2>
       <p className="text-gray-400 text-sm mb-4">{type}</p>
@@ -77,8 +77,8 @@ const StatCard = ({ icon, percentage, type, startAnimation }) => {
         />
         <defs>
           <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
-            <stop offset="0%" stopColor="#4df4cf" />
-            <stop offset="100%" stopColor="#4dc7f4" />
+            <stop offset="0%" stopColor="#96b188" />
+            <stop offset="100%" stopColor="#96b188" />
           </linearGradient>
         </defs>
       </svg>
@@ -188,7 +188,7 @@ export default function StatsSection() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-teal-300 mt-4 text-lg md:text-xl font-medium"
+            className="text-[#1A334E] mt-4 text-lg md:text-xl font-medium"
           >
             Illuminating your growth in numbers
           </motion.p>
@@ -197,9 +197,9 @@ export default function StatsSection() {
         {/* CARDS */}
         <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 relative z-20">
           {[
-            { icon: <Users className="w-6 h-6 text-teal-300" />, percentage: 39, type: "Visitors" },
-            { icon: <Anchor className="w-6 h-6 text-teal-300" />, percentage: 52, type: "Professional Sailors" },
-            { icon: <Route className="w-6 h-6 text-teal-300" />, percentage: 68, type: "Sea Routes" },
+            { icon: <Users className="w-6 h-6 text-[#96b188]" />, percentage: 39, type: "Visitors" },
+            { icon: <Anchor className="w-6 h-6 text-[#96b188]" />, percentage: 52, type: "Professional Sailors" },
+            { icon: <Route className="w-6 h-6 text-[#96b188]" />, percentage: 68, type: "Sea Routes" },
           ].map((item, i) => (
             <StatCard key={i} {...item} startAnimation={isInView} />
           ))}
@@ -207,10 +207,10 @@ export default function StatsSection() {
 
         {/* Stats Bar */}
         <div className="mt-20 h-56 w-12 relative flex items-center justify-center z-20">
-          <div className="absolute top-0 h-1/2 w-full border-t border-teal-300/40" />
-          <div className="absolute bottom-0 h-1/2 w-full bg-teal-400/40 backdrop-blur-md" />
+          <div className="absolute top-0 h-1/2 w-full border-t border-[#3E642B]" />
+          <div className="absolute bottom-0 h-1/2 w-full bg-[#3E642B] backdrop-blur-md" />
           <p
-            className="absolute font-semibold text-teal-200 tracking-[0.25em] text-xs"
+            className="absolute font-semibold text-white tracking-[0.25em] text-xs"
             style={{ writingMode: "vertical-rl", rotate: "180deg" }}
           >
             YOUR STATS
